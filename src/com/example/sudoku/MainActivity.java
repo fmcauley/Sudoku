@@ -38,6 +38,9 @@ public class MainActivity extends Activity implements OnClickListener {
 		case R.id.new_button:
 			openNewGameDialog();
 			break;
+		case R.id.exit_button:
+			finish();
+			break;
 		}
 	}
 	
