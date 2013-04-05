@@ -35,6 +35,10 @@
             android:name="com.example.sudoku.Game"
             android:label="@string/game_title" >
         </activity>
+        <activity
+            android:name="com.example.sudoku.Keypad"
+            android:label="@string/title_activity_keypad" >
+        </activity>
     </application>
 
 </manifest>
