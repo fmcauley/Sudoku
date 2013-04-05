@@ -1,4 +1,6 @@
 Sudoku
 ======
 
-Sudoku app from the pragmatic android book
+
+The Sudoku app from the Pragmatic Android book.
+
