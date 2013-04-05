@@ -7,6 +7,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.util.Log;
 
 public class MainActivity extends Activity implements OnClickListener {
 
@@ -31,9 +34,33 @@ public class MainActivity extends Activity implements OnClickListener {
 		case R.id.about_button:
 			Intent i = new Intent(this, About.class);
 			startActivity(i);
+			break;
+		case R.id.new_button:
+			openNewGameDialog();
+			break;
 		}
 	}
+	
+	private static final String TAG = "Sudoku";
+	private void openNewGameDialog(){
+		new AlertDialog.Builder(this)
+		.setTitle(R.string.new_game_title)
+		.setItems(R.array.difficulty,
+				new DialogInterface.OnClickListener() {
+					@Override
+					public void onClick(DialogInterface dialog, int which) {
+						// TODO Auto-generated method stub
+						startGame(which);
+					}
+				})
+				.show();
+	}
 
+	private void startGame(int i) {
+		Log.d(TAG, "clicked on " + i);
+		// Start game here
+	}
+	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		super.onCreateOptionsMenu(menu);
