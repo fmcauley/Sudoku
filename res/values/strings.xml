@@ -8,5 +8,7 @@
     <string name="new_label">New Game</string>
     <string name="about_label">About</string>
     <string name="exit_label">Exit</string>
+    <string name="title_activity_about">About</string>
+    <string name="hello_world">Hello world!</string>
 
 </resources>
