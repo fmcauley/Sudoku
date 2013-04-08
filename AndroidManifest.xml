@@ -22,6 +22,26 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
+=======
+        <activity
+            android:name="com.example.sudoku.About"
+            android:label="@string/about_title"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="com.example.sudoku.Prefs"
+            android:label="@string/settings_title" >
+        </activity>
+        <activity
+            android:name="com.example.sudoku.Game"
+            android:label="@string/game_title" >
+        </activity>
+        <activity
+            android:name="com.example.sudoku.Keypad"
+            android:label="@string/title_activity_keypad" >
+        </activity>
+>>>>>>> 6cdebd9f2fa31d23c45a7570498a3eb376456bf1
     </application>
 
 </manifest>
